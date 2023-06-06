@@ -4,6 +4,12 @@
   <form>
     <label>Operando A</label>
     <input type = "number" placeholder="Escribe el operando A"
-    [(ngModel)]="operandoA" name="operandoA">
+    [(ngModel)]="operandoA" name="operandoA"/>
+
+    <label>Operando B</label>
+    <input type = "number" placeholder="Escribe el operando A"
+    [(ngModel)]="operandoB" name="operandoB"/>
+    <button type="submit" (click)="sumar()">Sumar</button>
   </form>
+  <p>Resultado: {{resultado}}</p>
 </div>
